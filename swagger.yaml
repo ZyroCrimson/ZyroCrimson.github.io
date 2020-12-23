@@ -26,24 +26,24 @@ schemes:
 - "events"
 - "functions"
 paths:
-  /pet/{petId}/uploadImage:
+  :Get({serviceName}):
     post:
       tags:
-      - "pet"
-      summary: "uploads an image"
+      - "get"
+      summary: "Retrieves a service"
       description: ""
-      operationId: "uploadFile"
+      operationId: "getService"
       consumes:
       - "multipart/form-data"
       produces:
-      - "application/json"
+      - "service"
       parameters:
-      - name: "petId"
-        in: "path"
-        description: "ID of pet to update"
+      - name: "serviceName"
+        in: ""
+        description: "Name of the service you want to retrieve"
         required: true
-        type: "integer"
-        format: "int64"
+        type: "string"
+        format: "string"
       - name: "additionalMetadata"
         in: "formData"
         description: "Additional data to pass to server"
