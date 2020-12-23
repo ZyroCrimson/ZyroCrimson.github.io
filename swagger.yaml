@@ -16,8 +16,8 @@ info:
 host: "petstore.swagger.io"
 basePath: "/v2"
 tags:
-- name: "pet"
-  description: "Everything about your Pets"
+- name: "begin"
+  description: "Main function to start up API"
   externalDocs:
     description: "Find out more"
     url: "http://swagger.io"
@@ -29,8 +29,8 @@ tags:
     description: "Find out more about our store"
     url: "http://swagger.io"
 schemes:
-- "https"
-- "http"
+- "events"
+- "functions"
 paths:
   /pet/{petId}/uploadImage:
     post:
