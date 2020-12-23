@@ -25,8 +25,9 @@ tags:
 schemes:
 - "events"
 - "functions"
+- "services"
 paths:
-  :Get({serviceName}):
+  Get({serviceName}):
     post:
       tags:
       - "get"
